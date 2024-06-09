@@ -1,4 +1,5 @@
-﻿using APBD_Zadanie_6.Interfaces;
+﻿using APBD_Zadanie_6.DTOs;
+using APBD_Zadanie_6.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APBD_Zadanie_6.Controllers
@@ -15,6 +16,6 @@ namespace APBD_Zadanie_6.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> AddPrescription[FromBody];
+        public async Task<IActionResult> AddPrescription([FromBody] PrescriptionRequestDTO request) { }
     }
 }
